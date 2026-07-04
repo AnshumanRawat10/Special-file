@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Kannu ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+</head>
+<link rel="icon" href="assets/stickers/love.gif">
+<audio id="bgMusic" loop>
+    <source src="assets/music/apology.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn" onclick="toggleMusic()">
+    🔇
+</button>
+<body>
+
+<div id="hearts"></div>
+
+<!-- Page 1 -->
+<section class="page active" id="page1">
+
+<div class="card">
+<img src="assets/stickers/bubu sorry.gif" class="pageSticker">
+<h1>I Messed Up, Kannu 🥺</h1>
+
+<p>
+I know I made mistakes...
+But I really hope you'll hear me out.
+</p>
+
+<button onclick="nextPage()">
+Listen To My Heart 💝
+</button>
+
+</div>
+
+</section>
+
+<!-- Page 2 -->
+
+<section class="page">
+
+<div class="card">
+<img src="assets/stickers/dudu-crying-texting.gif" class="pageSticker">
+<h1>I Know I Hurt You 💔</h1>
+
+<p>
+Seeing you hurt because of me
+is something I never wanted.
+
+I'm truly sorry.
+</p>
+
+<button onclick="nextPage()">
+Next →
+</button>
+
+</div>
+
+</section>
+
+<!-- Page 3 -->
+
+<section class="page">
+
+<div class="card">
+<img src="assets/stickers/tkthao219-bubududu love.gif" class="pageSticker">
+<h1>You Mean Everything ❤️</h1>
+
+<p>
+Every smile,
+every conversation,
+every moment with you
+means more than you know.
+</p>
+
+<button onclick="nextPage()">
+Next →
+</button>
+
+</div>
+
+</section>
+
+<!-- Page 4 -->
+
+<section class="page">
+
+<div class="card">
+<img src="assets/stickers/casal-dudu bubu hug.gif" class="pageSticker">
+<h1>I'm Truly Sorry 🥹</h1>
+
+<p>
+If I could go back,
+I'd choose better words,
+better actions,
+and protect your smile.
+
+Please let me make things right.
+</p>
+
+<button onclick="nextPage()">
+Continue →
+</button>
+
+</div>
+
+</section>
+
+<!-- Page 5 -->
+
+<!-- Page 5 -->
+<section class="page" id="page5">
+
+<div class="card">
+
+<h1>Click To Open ✉️</h1>
+
+<p>
+Your virtual peace offering is waiting...
+</p>
+
+<div class="envelope-container">
+
+<div class="envelope" id="envelope" onclick="openEnvelope()">
+
+<div class="envelope-back"></div>
+
+<div class="letter">
+
+<h3>Dear Kannu ❤️</h3>
+
+<p>
+Before you read everything...
+
+I just wanted to say one thing.
+
+I'm truly sorry.
+</p>
+
+</div>
+
+<div class="envelope-flap"></div>
+
+<div class="seal">💗</div>
+
+</div>
+
+</div>
+
+<p style="margin-top:25px;color:#777;">
+Tap the seal to open it ✨
+</p>
+
+</div>
+
+</section>
+
+<!-- Page 6 -->
+
+<!-- Page 6 -->
+
+<section class="page">
+
+    <div class="card">
+
+        <img src="assets/stickers/letter.gif" class="pageSticker">
+
+        <h1>Virtual Peace Offering 💌</h1>
+
+        <p class="loveLetter">
+
+Dear Kannu,
+
+If you're reading this, thank you for giving my words a chance.
+
+I know I hurt you, and I'm genuinely sorry for that.
+
+I can't change what has already happened, but I can learn from it and become better because of it.
+
+You deserve kindness, respect, patience, and someone who makes your days brighter—not heavier.
+
+I'm not asking you to forget everything overnight.
+
+I'm simply asking for one chance to show you that my actions can be better than my mistakes.
+
+You are my upcoming most adorable person in my life.
+
+No matter what you decide after reading this, thank you for listening to my heart.
+
+❤️
+
+        </p>
+
+        <button onclick="nextPage()">
+            Continue 💖
+        </button>
+
+    </div>
+
+</section>
+
+<!-- Page 7 -->
+
+<!-- Page 7 -->
+
+<section class="page" id="page7">
+
+    <div class="card">
+
+        <img src="assets/stickers/forgive.gif" class="pageSticker">
+
+        <h1>Forgiveness Meter 💖</h1>
+
+        <p>
+            Every click is one tiny step closer to forgiving me...
+        </p>
+
+        <div class="meter">
+
+            <div id="fill"></div>
+
+        </div>
+
+        <h2 id="percent">0%</h2>
+
+        <button id="forgive">
+            Forgive Me 🥺
+        </button>
+
+    </div>
+
+</section>
+
+<!-- Page 8 -->
+
+<section class="page">
+
+<div class="card">
+<img src="assets/stickers/casal-dudu bubu hug.gif" class="pageSticker">
+<h1>You're Forgiven 🎉</h1>
+
+<p>
+
+Thank you...
+
+This means more than you know.
+
+</p>
+
+<button onclick="nextPage()">
+
+Continue →
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Page 9 -->
+
+<section class="page">
+
+<div class="card">
+<div class="giftRow">
+<div class="giftRow">
+
+<img src="assets/stickers/dudu-gift-for-bubu-dudu-flowers.gif" class="giftSticker">
+
+<img src="assets/stickers/tkthao219-bubududu gift.gif" class="giftSticker">
+
+<img src="assets/stickers/bear-panda chocolate.gif" class="giftSticker">
+
+</div>
+<h1>Enough Bribes 🎁</h1>
+
+<div class="gift">🌷 Fresh Blooms</div>
+
+<div class="gift">🧸 Cuddle Pass</div>
+
+<div class="gift">🍫 Sweet Treat</div>
+
+<button onclick="nextPage()">
+
+One Last Thing →
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Page 10 -->
+
+<!-- Page 10 -->
+
+<section class="page" id="page10">
+
+    <div class="card celebrationCard">
+
+        <img src="assets/stickers/hug.gif" class="finalSticker">
+
+        <h1>Peace Treaty Signed 🤝💖</h1>
+
+        <p class="finalText">
+
+Thank you for reading everything till the end.
+
+Whether you forgive me today or tomorrow...
+
+I just want you to know that every word here came straight from my heart.
+
+I hope this little website brought at least one smile to your face.
+
+✨ Thank You, Kannu. ✨
+
+        </p>
+
+        <button onclick="celebrate()">
+            One Last Hug 🤗
+        </button>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
